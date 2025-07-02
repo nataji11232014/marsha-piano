@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marsha Emmons Piano Class</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #372c6a;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            animation: fadeInDown 1s 0.2s backwards;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav li {
+            display: inline;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: #4a3c8c;
+            color: #ffd700;
+        }
+        header {
+            background: #4a3c8c;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+        main {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            animation: fadeInUp 1.2s ease;
+        }
+        h1 {
+            margin-top: 0;
+            animation: popIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        .contact {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #f0f0fa;
+            border-radius: 6px;
+            animation: fadeIn 1.5s 1.6s backwards;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            background: #4a3c8c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.2s;
+            animation: bounceIn 1.2s 1.8s backwards;
+        }
+        .btn:hover {
+            background: #372c6a;
+            transform: scale(1.07);
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.7);}
+            80% { opacity: 1; transform: scale(1.1);}
+            100% { opacity: 1; transform: scale(1);}
+        }
+        @keyframes fadeIn {
+            from { opacity: 0;}
+            to { opacity: 1;}
+        }
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: scale(0.5);}
+            60% { opacity: 1; transform: scale(1.1);}
+            100% { opacity: 1; transform: scale(1);}
+        }
+        section {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: sectionFadeIn 1s forwards;
+        }
+        section:nth-of-type(1) { animation-delay: 0.5s; }
+        section:nth-of-type(2) { animation-delay: 0.9s; }
+        section:nth-of-type(3) { animation-delay: 1.3s; }
+        @keyframes sectionFadeIn {
+            to { opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#welcome" class="active">Welcome</a></li>
+            <li><a href="#about">About Marsha</a></li>
+            <li><a href="#contact">Contact & Enrollment</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Marsha Emmons Piano Class</h1>
+        <p>Inspiring a love for music, one note at a time</p>
+    </header>
+    <main>
+        <section id="welcome">
+            <h2>Welcome!</h2>
+            <div style="background: #ffd700; color: #372c6a; padding: 1rem 1.5rem; border-radius: 8px; font-size: 1.2rem; font-weight: bold; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.07); animation: popIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);">
+                🎹 Give your child the gift of music! Studies show that piano lessons boost confidence, improve academic skills, and foster creativity. Enroll today and watch your child shine!
+            </div>
+            <p>
+                Whether you're a beginner or looking to refine your piano skills, Marsha Emmons offers personalized lessons for all ages and levels. 
+                Learn at your own pace in a supportive and encouraging environment.
+            </p>
+            <p>
+                Our Home is a place where creativity and discipline meet. We believe that music is for everyone, and every student is encouraged to explore their unique musical voice.
+            </p>
+            <p>
+                Lessons are available both in-person and online, making it easy to fit music into your busy schedule. Join us and start your musical journey today!
+            </p>
+            <p>
+                 Recitals and performance opportunities are available for those who wish to share their progress and build confidence.
+            </p>
+            <p>
+                Our curriculum covers classical, jazz, pop, and improvisation, ensuring that every student finds music that inspires them. We also incorporate music theory and ear training to build a strong foundation.
+            </p>
+        </section>
+        <section id="about">
+            <h2>About Marsha</h2>
+            <p>
+                Marsha Emmons is an experienced piano teacher with a passion for helping students discover the joy of music. 
+                With over 40 years of teaching experience, Marsha tailors each lesson to fit the student's unique goals and interests.
+            </p>
+            <p>
+                 Her teaching style is patient, encouraging, and adaptable to each student's learning style.
+            </p>
+            <p>
+                She welcomes students of all ages, from young children to adults. 
+            <p>
+                Marsha believes that learning piano should be fun and rewarding. 
+            </p>
+            <p>
+                Outside of teaching, Marsha enjoys composing her own music, and spending time with family and friends. She is dedicated to fostering a vibrant musical community.
+            </p>
+        </section>
+        <section id="contact">
+            <h2>Contact & Enrollment</h2>
+            <div class="contact">
+                <p>Email: <a href="mailto:marsha.piano@email.com">marsha.piano@email.com</a></p>
+                <p>Phone: (612) 2991-0058</p>
+                <p>
+                    Ready to get started or have questions? Reach out today to schedule your first lesson or to learn more about our programs and availability.
+                </p>
+                <p>
+                    New students are welcome year-round. Please include your name, age (or your child's age), and any previous musical experience in your message. We look forward to making music with you!
+                </p>
+                <a class="btn" href="mailto:marsha.piano@email.com?subject=Lesson Inquiry">Request Info</a>
+            </div>
+            <div style="margin-top:1.5rem;">
+                <h3>Location</h3>
+                <p>
+                    Lessons are held at our comfortable home in Elk River, with convenient parking and a welcoming atmosphere. Online lessons are available via Zoom for students outside the area.
+                </p>
+                <h3>Studio Policies</h3>
+                <ul>
+                    <li>Weekly lessons are recommended for steady progress.</li>
+                    <li>Make-up lessons are available with 24-hour notice.</li>
+                    <li>All ages and skill levels are welcome!</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Highlight nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 80;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
